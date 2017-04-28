@@ -7443,7 +7443,10 @@ __decorate([
 BubbleChartComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'ngx-charts-bubble-chart',
-        template: "\n    <ngx-charts-chart\n      [view]=\"[width, height]\"\n      [showLegend]=\"legend\"\n      [activeEntries]=\"activeEntries\"\n      [legendOptions]=\"legendOptions\"\n      (legendLabelClick)=\"onClick($event)\"\n      (legendLabelActivate)=\"onActivate($event)\"\n      (legendLabelDeactivate)=\"onDeactivate($event)\">\n      <svg:defs>\n        <svg:clipPath>\n          <svg:rect\n            [attr.width]=\"dims.width + 10\"\n            [attr.height]=\"dims.height + 10\"\n            [attr.transform]=\"'translate(-5, -5)'\"/>\n        </svg:clipPath>\n      </svg:defs>\n      <svg:g [attr.transform]=\"transform\" class=\"bubble-chart chart\">\n        <svg:g ngx-charts-x-axis\n          *ngIf=\"xAxis\"\n          [showGridLines]=\"showGridLines\"\n          [dims]=\"dims\"\n          [xScale]=\"xScale\"\n          [showLabel]=\"showXAxisLabel\"\n          [labelText]=\"xAxisLabel\"\n          [tickFormatting]=\"xAxisTickFormatting\"\n          (dimensionsChanged)=\"updateXAxisHeight($event)\"/>\n        <svg:g ngx-charts-y-axis\n          *ngIf=\"yAxis\"\n          [showGridLines]=\"showGridLines\"\n          [yScale]=\"yScale\"\n          [dims]=\"dims\"\n          [showLabel]=\"showYAxisLabel\"\n          [labelText]=\"yAxisLabel\"\n          [tickFormatting]=\"yAxisTickFormatting\"\n          (dimensionsChanged)=\"updateYAxisWidth($event)\"/>\n        <svg:rect\n          class=\"bubble-chart-area\"\n          x=\"0\"\n          y=\"0\"\n          [attr.width]=\"dims.width\"\n          [attr.height]=\"dims.height\"\n          style=\"fill: rgb(255, 0, 0); opacity: 0; cursor: 'auto';\"\n          (mouseenter)=\"deactivateAll()\"\n        />\n        <svg:g *ngFor=\"let series of data\">\n          <svg:g ngx-charts-bubble-series\n            [xScale]=\"xScale\"\n            [yScale]=\"yScale\"\n            [rScale]=\"rScale\"\n            [xScaleType]=\"xScaleType\"\n            [yScaleType]=\"yScaleType\"\n            [xAxisLabel]=\"xAxisLabel\"\n            [yAxisLabel]=\"yAxisLabel\"\n            [colors]=\"colors\"\n            [data]=\"series\"\n            [activeEntries]=\"activeEntries\"\n            [tooltipDisabled]=\"tooltipDisabled\"\n            (select)=\"onClick($event, series)\"\n            (activate)=\"onActivate($event)\"\n            (deactivate)=\"onDeactivate($event)\" />\n        </svg:g>\n      </svg:g>\n    </ngx-charts-chart>"
+        template: "\n    <ngx-charts-chart\n      [view]=\"[width, height]\"\n      [showLegend]=\"legend\"\n      [activeEntries]=\"activeEntries\"\n      [legendOptions]=\"legendOptions\"\n      (legendLabelClick)=\"onClick($event)\"\n      (legendLabelActivate)=\"onActivate($event)\"\n      (legendLabelDeactivate)=\"onDeactivate($event)\">\n      <svg:defs>\n        <svg:clipPath>\n          <svg:rect\n            [attr.width]=\"dims.width + 10\"\n            [attr.height]=\"dims.height + 10\"\n            [attr.transform]=\"'translate(-5, -5)'\"/>\n        </svg:clipPath>\n      </svg:defs>\n      <svg:g [attr.transform]=\"transform\" class=\"bubble-chart chart\">\n        <svg:g ngx-charts-x-axis\n          *ngIf=\"xAxis\"\n          [showGridLines]=\"showGridLines\"\n          [dims]=\"dims\"\n          [xScale]=\"xScale\"\n          [showLabel]=\"showXAxisLabel\"\n          [labelText]=\"xAxisLabel\"\n          [tickFormatting]=\"xAxisTickFormatting\"\n          (dimensionsChanged)=\"updateXAxisHeight($event)\"/>\n        <svg:g ngx-charts-y-axis\n          *ngIf=\"yAxis\"\n          [showGridLines]=\"showGridLines\"\n          [yScale]=\"yScale\"\n          [dims]=\"dims\"\n          [showLabel]=\"showYAxisLabel\"\n          [labelText]=\"yAxisLabel\"\n          [tickFormatting]=\"yAxisTickFormatting\"\n          (dimensionsChanged)=\"updateYAxisWidth($event)\"/>\n        <svg:rect\n          class=\"bubble-chart-area\"\n          x=\"0\"\n          y=\"0\"\n          [attr.width]=\"dims.width\"\n          [attr.height]=\"dims.height\"\n          style=\"fill: rgb(255, 0, 0); opacity: 0; cursor: 'auto';\"\n          (mouseenter)=\"deactivateAll()\"\n        />\n        <svg:g *ngFor=\"let series of data\">\n          <svg:g ngx-charts-bubble-series\n            [xScale]=\"xScale\"\n            [yScale]=\"yScale\"\n            [rScale]=\"rScale\"\n            [xScaleType]=\"xScaleType\"\n            [yScaleType]=\"yScaleType\"\n            [xAxisLabel]=\"xAxisLabel\"\n            [yAxisLabel]=\"yAxisLabel\"\n            [colors]=\"colors\"\n            [data]=\"series\"\n            [activeEntries]=\"activeEntries\"\n            [tooltipDisabled]=\"tooltipDisabled\"\n            (select)=\"onClick($event, series)\"\n            (activate)=\"onActivate($event)\"\n            (deactivate)=\"onDeactivate($event)\" />\n        </svg:g>\n      </svg:g>\n    </ngx-charts-chart>",
+        styles: [__webpack_require__("./src/common/base-chart.component.scss")],
+        changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectionStrategy"].OnPush,
+        encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None
     })
 ], BubbleChartComponent);
 
@@ -7651,12 +7654,20 @@ var BubbleSeriesComponent = (function () {
     };
     BubbleSeriesComponent.prototype.getTooltipText = function (circle) {
         var hasRadius = typeof circle.r !== 'undefined';
+        var hasTooltipLabel = circle.tooltipLabel && circle.tooltipLabel.length;
+        var hasSeriesName = circle.seriesName && circle.seriesName.length;
         var radiusValue = hasRadius ? __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__common_label_helper__["a" /* formatLabel */])(circle.r) : '';
         var xAxisLabel = this.xAxisLabel && this.xAxisLabel !== '' ? this.xAxisLabel + ":" : '';
         var yAxisLabel = this.yAxisLabel && this.yAxisLabel !== '' ? this.yAxisLabel + ":" : '';
         var x = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__common_label_helper__["a" /* formatLabel */])(circle.x);
         var y = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__common_label_helper__["a" /* formatLabel */])(circle.y);
-        return "\n      <span class=\"tooltip-label\">\n        " + circle.seriesName + " \u2022 " + circle.tooltipLabel + "\n      </span>\n      <span class=\"tooltip-label\">\n        <label>" + xAxisLabel + "</label> " + x + "<br />\n        <label>" + yAxisLabel + "</label> " + y + "\n      </span>\n      <span class=\"tooltip-val\">\n        " + radiusValue + "\n      </span>\n    ";
+        var name = (hasSeriesName && hasTooltipLabel) ?
+            circle.seriesName + " \u2022 " + circle.tooltipLabel :
+            circle.seriesName + circle.tooltipLabel;
+        var tooltipTitle = (hasSeriesName || hasTooltipLabel) ?
+            "<span class=\"tooltip-label\">" + name + "</span>" :
+            '';
+        return "\n      " + tooltipTitle + "\n      <span class=\"tooltip-label\">\n        <label>" + xAxisLabel + "</label> " + x + "<br />\n        <label>" + yAxisLabel + "</label> " + y + "\n      </span>\n      <span class=\"tooltip-val\">\n        " + radiusValue + "\n      </span>\n    ";
     };
     BubbleSeriesComponent.prototype.onClick = function (value, label) {
         this.select.emit({
@@ -9021,6 +9032,8 @@ var BaseChartComponent = (function () {
         if (!this.width || !this.height) {
             this.width = this.height = 0;
         }
+        this.width = Math.round(this.width);
+        this.height = Math.round(this.height);
         if (this.cd) {
             this.cd.markForCheck();
         }
@@ -9296,8 +9309,8 @@ var ChartComponent = (function () {
             }
         }
         var chartColumns = 12 - legendColumns;
-        this.chartWidth = this.view[0] * chartColumns / 12.0;
-        this.legendWidth = this.view[0] * legendColumns / 12.0;
+        this.chartWidth = Math.round(this.view[0] * chartColumns / 12.0);
+        this.legendWidth = Math.round(this.view[0] * legendColumns / 12.0);
     };
     ChartComponent.prototype.getLegendType = function () {
         if (this.legendOptions.scaleType === 'linear') {
@@ -10171,7 +10184,8 @@ function gridLayout(dims, data, minWidth) {
         res[i] = {};
         res[i].data = {
             name: data[i] ? data[i].name : '',
-            value: data[i] ? data[i].value : undefined
+            value: data[i] ? data[i].value : undefined,
+            extra: data[i] ? data[i].extra : undefined,
         };
         res[i].x = xScale(i % columns);
         res[i].y = yScale(Math.floor(i / columns));
@@ -12615,9 +12629,9 @@ function calculateViewDimensions(_a) {
     chartWidth = Math.max(0, chartWidth);
     chartHeight = Math.max(0, chartHeight);
     return {
-        width: chartWidth,
-        height: chartHeight,
-        xOffset: xOffset
+        width: Math.round(chartWidth),
+        height: Math.round(chartHeight),
+        xOffset: Math.round(xOffset)
     };
 }
 
@@ -15566,10 +15580,10 @@ var CardComponent = (function () {
             setTimeout(function () {
                 _this.scaleText();
                 _this.value = value;
-                if (hasValue) {
+                if (hasValue && !_this.initialized) {
                     setTimeout(function () { return _this.startCount(); }, 20);
                 }
-            }, 0);
+            }, 8);
         });
     };
     CardComponent.prototype.paddedValue = function (value) {
@@ -15586,30 +15600,38 @@ var CardComponent = (function () {
             var decs = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__common_count__["b" /* decimalChecker */])(val_1);
             var callback = function (_a) {
                 var value = _a.value, finished = _a.finished;
-                value = finished ? val_1 : value;
-                var v = _this.valueFormatting({ label: _this.label, data: _this.data, value: value });
-                _this.value = _this.paddedValue(v);
-                _this.cd.markForCheck();
+                _this.zone.run(function () {
+                    value = finished ? val_1 : value;
+                    _this.value = _this.valueFormatting({ label: _this.label, data: _this.data, value: value });
+                    if (!finished) {
+                        _this.value = _this.paddedValue(_this.value);
+                    }
+                    _this.cd.markForCheck();
+                });
             };
             this.animationReq = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__common_count__["c" /* count */])(0, val_1, decs, 1, callback);
             this.initialized = true;
         }
     };
     CardComponent.prototype.scaleText = function () {
-        var _a = this.textEl.nativeElement.getBoundingClientRect(), width = _a.width, height = _a.height;
-        if (width === 0 || height === 0) {
-            return;
-        }
-        var textPadding = this.textPadding[1] = this.textPadding[3] = this.cardWidth / 8;
-        var availableWidth = this.cardWidth - 2 * textPadding;
-        var availableHeight = this.cardHeight / 3;
-        var resizeScale = Math.min(availableWidth / width, availableHeight / height);
-        this.textFontSize = Math.round(this.textFontSize * resizeScale);
-        this.labelFontSize = Math.min(this.textFontSize, 12);
-        this.setPadding();
-        this.cd.markForCheck();
+        var _this = this;
+        this.zone.run(function () {
+            var _a = _this.textEl.nativeElement.getBoundingClientRect(), width = _a.width, height = _a.height;
+            if (width === 0 || height === 0) {
+                return;
+            }
+            var textPadding = _this.textPadding[1] = _this.textPadding[3] = _this.cardWidth / 8;
+            var availableWidth = _this.cardWidth - 2 * textPadding;
+            var availableHeight = _this.cardHeight / 3;
+            var resizeScale = Math.min(availableWidth / width, availableHeight / height);
+            _this.textFontSize = Math.floor(_this.textFontSize * resizeScale);
+            _this.labelFontSize = Math.min(_this.textFontSize, 12);
+            _this.setPadding();
+            _this.cd.markForCheck();
+        });
     };
     CardComponent.prototype.setPadding = function () {
+        this.textPadding[1] = this.textPadding[3] = this.cardWidth / 8;
         var padding = this.cardHeight / 2;
         this.textPadding[0] = padding - this.textFontSize - this.labelFontSize / 2;
         this.textPadding[2] = padding - this.labelFontSize;

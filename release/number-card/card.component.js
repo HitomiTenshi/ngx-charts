@@ -47,10 +47,10 @@ var CardComponent = (function () {
             setTimeout(function () {
                 _this.scaleText();
                 _this.value = value;
-                if (hasValue) {
+                if (hasValue && !_this.initialized) {
                     setTimeout(function () { return _this.startCount(); }, 20);
                 }
-            }, 0);
+            }, 8);
         });
     };
     CardComponent.prototype.paddedValue = function (value) {
@@ -67,30 +67,38 @@ var CardComponent = (function () {
             var decs = decimalChecker(val_1);
             var callback = function (_a) {
                 var value = _a.value, finished = _a.finished;
-                value = finished ? val_1 : value;
-                var v = _this.valueFormatting({ label: _this.label, data: _this.data, value: value });
-                _this.value = _this.paddedValue(v);
-                _this.cd.markForCheck();
+                _this.zone.run(function () {
+                    value = finished ? val_1 : value;
+                    _this.value = _this.valueFormatting({ label: _this.label, data: _this.data, value: value });
+                    if (!finished) {
+                        _this.value = _this.paddedValue(_this.value);
+                    }
+                    _this.cd.markForCheck();
+                });
             };
             this.animationReq = count(0, val_1, decs, 1, callback);
             this.initialized = true;
         }
     };
     CardComponent.prototype.scaleText = function () {
-        var _a = this.textEl.nativeElement.getBoundingClientRect(), width = _a.width, height = _a.height;
-        if (width === 0 || height === 0) {
-            return;
-        }
-        var textPadding = this.textPadding[1] = this.textPadding[3] = this.cardWidth / 8;
-        var availableWidth = this.cardWidth - 2 * textPadding;
-        var availableHeight = this.cardHeight / 3;
-        var resizeScale = Math.min(availableWidth / width, availableHeight / height);
-        this.textFontSize = Math.round(this.textFontSize * resizeScale);
-        this.labelFontSize = Math.min(this.textFontSize, 12);
-        this.setPadding();
-        this.cd.markForCheck();
+        var _this = this;
+        this.zone.run(function () {
+            var _a = _this.textEl.nativeElement.getBoundingClientRect(), width = _a.width, height = _a.height;
+            if (width === 0 || height === 0) {
+                return;
+            }
+            var textPadding = _this.textPadding[1] = _this.textPadding[3] = _this.cardWidth / 8;
+            var availableWidth = _this.cardWidth - 2 * textPadding;
+            var availableHeight = _this.cardHeight / 3;
+            var resizeScale = Math.min(availableWidth / width, availableHeight / height);
+            _this.textFontSize = Math.floor(_this.textFontSize * resizeScale);
+            _this.labelFontSize = Math.min(_this.textFontSize, 12);
+            _this.setPadding();
+            _this.cd.markForCheck();
+        });
     };
     CardComponent.prototype.setPadding = function () {
+        this.textPadding[1] = this.textPadding[3] = this.cardWidth / 8;
         var padding = this.cardHeight / 2;
         this.textPadding[0] = padding - this.textFontSize - this.labelFontSize / 2;
         this.textPadding[2] = padding - this.labelFontSize;
