@@ -19,6 +19,7 @@ var BarHorizontalComponent = (function (_super) {
         _this.activeEntries = [];
         _this.barPadding = 8;
         _this.roundDomains = false;
+        _this.xAxisMinScale = 0;
         _this.activate = new EventEmitter();
         _this.deactivate = new EventEmitter();
         _this.margin = [10, 20, 10, 20];
@@ -65,7 +66,7 @@ var BarHorizontalComponent = (function (_super) {
     BarHorizontalComponent.prototype.getXDomain = function () {
         var values = this.results.map(function (d) { return d.value; });
         var min = Math.min.apply(Math, [0].concat(values));
-        var max = Math.max.apply(Math, values);
+        var max = Math.max.apply(Math, [this.xAxisMinScale].concat(values));
         return [min, max];
     };
     BarHorizontalComponent.prototype.getYDomain = function () {
@@ -162,6 +163,7 @@ BarHorizontalComponent.propDecorators = {
     'yAxisTickFormatting': [{ type: Input },],
     'barPadding': [{ type: Input },],
     'roundDomains': [{ type: Input },],
+    'xAxisMinScale': [{ type: Input },],
     'activate': [{ type: Output },],
     'deactivate': [{ type: Output },],
 };

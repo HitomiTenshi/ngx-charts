@@ -21,6 +21,8 @@ export declare class AreaChartStackedComponent extends BaseChartComponent {
     yAxisTickFormatting: any;
     roundDomains: boolean;
     tooltipDisabled: boolean;
+    xAxisMinScale: any;
+    yAxisMinScale: number;
     activate: EventEmitter<any>;
     deactivate: EventEmitter<any>;
     dims: ViewDimensions;

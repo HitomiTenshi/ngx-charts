@@ -20,6 +20,7 @@ var BarVerticalStackedComponent = (function (_super) {
         _this.activeEntries = [];
         _this.barPadding = 8;
         _this.roundDomains = false;
+        _this.yAxisMinScale = 0;
         _this.activate = new EventEmitter();
         _this.deactivate = new EventEmitter();
         _this.margin = [10, 20, 10, 20];
@@ -87,7 +88,7 @@ var BarVerticalStackedComponent = (function (_super) {
             domain.push(sum);
         }
         var min = Math.min.apply(Math, [0].concat(domain));
-        var max = Math.max.apply(Math, domain);
+        var max = Math.max.apply(Math, [this.yAxisMinScale].concat(domain));
         return [min, max];
     };
     BarVerticalStackedComponent.prototype.getXScale = function () {
@@ -222,6 +223,7 @@ BarVerticalStackedComponent.propDecorators = {
     'yAxisTickFormatting': [{ type: Input },],
     'barPadding': [{ type: Input },],
     'roundDomains': [{ type: Input },],
+    'yAxisMinScale': [{ type: Input },],
     'activate': [{ type: Output },],
     'deactivate': [{ type: Output },],
 };

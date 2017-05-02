@@ -22,6 +22,7 @@ var BarVertical2DComponent = (function (_super) {
         _this.groupPadding = 16;
         _this.barPadding = 8;
         _this.roundDomains = false;
+        _this.yAxisMinScale = 0;
         _this.activate = new EventEmitter();
         _this.deactivate = new EventEmitter();
         _this.margin = [10, 20, 10, 20];
@@ -112,7 +113,7 @@ var BarVertical2DComponent = (function (_super) {
             }
         }
         var min = Math.min.apply(Math, [0].concat(domain));
-        var max = Math.max.apply(Math, domain);
+        var max = Math.max.apply(Math, [this.yAxisMinScale].concat(domain));
         return [min, max];
     };
     BarVertical2DComponent.prototype.groupTransform = function (group) {
@@ -236,6 +237,7 @@ BarVertical2DComponent.propDecorators = {
     'groupPadding': [{ type: Input },],
     'barPadding': [{ type: Input },],
     'roundDomains': [{ type: Input },],
+    'yAxisMinScale': [{ type: Input },],
     'activate': [{ type: Output },],
     'deactivate': [{ type: Output },],
 };

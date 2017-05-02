@@ -24,6 +24,8 @@ export declare class LineChartComponent extends BaseChartComponent {
     roundDomains: boolean;
     tooltipDisabled: boolean;
     showSeriesOnHover: boolean;
+    xAxisMinScale: any;
+    yAxisMinScale: number;
     activate: EventEmitter<any>;
     deactivate: EventEmitter<any>;
     dims: ViewDimensions;

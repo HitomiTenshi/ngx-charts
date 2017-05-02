@@ -20,6 +20,7 @@ export declare class BarHorizontalComponent extends BaseChartComponent {
     yAxisTickFormatting: any;
     barPadding: number;
     roundDomains: boolean;
+    xAxisMinScale: number;
     activate: EventEmitter<any>;
     deactivate: EventEmitter<any>;
     dims: ViewDimensions;

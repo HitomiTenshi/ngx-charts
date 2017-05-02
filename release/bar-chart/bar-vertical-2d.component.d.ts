@@ -22,6 +22,7 @@ export declare class BarVertical2DComponent extends BaseChartComponent {
     groupPadding: number;
     barPadding: number;
     roundDomains: boolean;
+    yAxisMinScale: number;
     activate: EventEmitter<any>;
     deactivate: EventEmitter<any>;
     dims: ViewDimensions;

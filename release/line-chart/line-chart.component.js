@@ -22,6 +22,7 @@ var LineChartComponent = (function (_super) {
         _this.roundDomains = false;
         _this.tooltipDisabled = false;
         _this.showSeriesOnHover = true;
+        _this.yAxisMinScale = 0;
         _this.activate = new EventEmitter();
         _this.deactivate = new EventEmitter();
         _this.margin = [10, 20, 10, 20];
@@ -94,14 +95,22 @@ var LineChartComponent = (function (_super) {
         var domain = [];
         if (this.scaleType === 'time') {
             var min = Math.min.apply(Math, values);
-            var max = Math.max.apply(Math, values);
-            domain = [min, max];
+            if (this.xAxisMinScale) {
+                domain = [min, Math.max.apply(Math, [this.xAxisMinScale].concat(values))];
+            }
+            else {
+                domain = [min, Math.max.apply(Math, values)];
+            }
         }
         else if (this.scaleType === 'linear') {
             values = values.map(function (v) { return Number(v); });
             var min = Math.min.apply(Math, values);
-            var max = Math.max.apply(Math, values);
-            domain = [min, max];
+            if (this.xAxisMinScale) {
+                domain = [min, Math.max.apply(Math, [this.xAxisMinScale].concat(values))];
+            }
+            else {
+                domain = [min, Math.max.apply(Math, values)];
+            }
         }
         else {
             domain = values;
@@ -131,7 +140,7 @@ var LineChartComponent = (function (_super) {
             }
         }
         var min = Math.min.apply(Math, domain);
-        var max = Math.max.apply(Math, domain);
+        var max = Math.max.apply(Math, [this.yAxisMinScale].concat(domain));
         if (!this.autoScale) {
             min = Math.min(0, min);
         }
@@ -315,6 +324,8 @@ LineChartComponent.propDecorators = {
     'roundDomains': [{ type: Input },],
     'tooltipDisabled': [{ type: Input },],
     'showSeriesOnHover': [{ type: Input },],
+    'xAxisMinScale': [{ type: Input },],
+    'yAxisMinScale': [{ type: Input },],
     'activate': [{ type: Output },],
     'deactivate': [{ type: Output },],
     'hideCircles': [{ type: HostListener, args: ['mouseleave',] },],

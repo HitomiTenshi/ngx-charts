@@ -23,21 +23,29 @@ function isDate(value) {
     }
     return false;
 }
-export function getDomain(values, scaleType, autoScale) {
+export function getDomain(values, scaleType, autoScale, minScale) {
     var domain = [];
     if (scaleType === 'time') {
         var min = Math.min.apply(Math, values);
-        var max = Math.max.apply(Math, values);
-        domain = [min, max];
+        if (minScale) {
+            domain = [min, Math.max.apply(Math, [minScale].concat(values))];
+        }
+        else {
+            domain = [min, Math.max.apply(Math, values)];
+        }
     }
     else if (scaleType === 'linear') {
         values = values.map(function (v) { return Number(v); });
         var min = Math.min.apply(Math, values);
-        var max = Math.max.apply(Math, values);
         if (!autoScale) {
             min = Math.min(0, min);
         }
-        domain = [min, max];
+        if (minScale) {
+            domain = [min, Math.max.apply(Math, [minScale].concat(values))];
+        }
+        else {
+            domain = [min, Math.max.apply(Math, values)];
+        }
     }
     else {
         domain = values;
