@@ -10,7 +10,7 @@ import { count, decimalChecker } from './count.helper';
  * @export
  * @class CountUpDirective
  */
-var CountUpDirective = /** @class */ (function () {
+var CountUpDirective = (function () {
     function CountUpDirective(cd, element) {
         this.cd = cd;
         this.countDuration = 1;

@@ -14,7 +14,7 @@ import { scaleBand, scaleLinear } from 'd3-scale';
 import { calculateViewDimensions } from '../common/view-dimensions.helper';
 import { ColorHelper } from '../common/color.helper';
 import { BaseChartComponent } from '../common/base-chart.component';
-var BarHorizontalNormalizedComponent = /** @class */ (function (_super) {
+var BarHorizontalNormalizedComponent = (function (_super) {
     __extends(BarHorizontalNormalizedComponent, _super);
     function BarHorizontalNormalizedComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;

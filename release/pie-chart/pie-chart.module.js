@@ -8,7 +8,7 @@ import { PieGridComponent } from './pie-grid.component';
 import { PieGridSeriesComponent } from './pie-grid-series.component';
 import { PieSeriesComponent } from './pie-series.component';
 export { AdvancedPieChartComponent, PieLabelComponent, PieArcComponent, PieChartComponent, PieGridComponent, PieGridSeriesComponent, PieSeriesComponent };
-var PieChartModule = /** @class */ (function () {
+var PieChartModule = (function () {
     function PieChartModule() {
     }
     PieChartModule.decorators = [

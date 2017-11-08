@@ -33,7 +33,7 @@ var COMPONENTS = [
     Timeline,
     AdvancedLegendComponent
 ];
-var ChartCommonModule = /** @class */ (function () {
+var ChartCommonModule = (function () {
     function ChartCommonModule() {
     }
     ChartCommonModule.decorators = [

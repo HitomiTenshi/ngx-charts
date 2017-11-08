@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
 import { formatLabel } from '../common/label.helper';
-var HeatCellSeriesComponent = /** @class */ (function () {
+var HeatCellSeriesComponent = (function () {
     function HeatCellSeriesComponent() {
         this.tooltipDisabled = false;
         this.animations = true;

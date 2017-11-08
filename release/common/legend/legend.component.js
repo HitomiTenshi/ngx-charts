@@ -1,6 +1,6 @@
 import { Component, Input, ChangeDetectionStrategy, Output, EventEmitter, ChangeDetectorRef, ViewEncapsulation } from '@angular/core';
 import { formatLabel } from '../label.helper';
-var LegendComponent = /** @class */ (function () {
+var LegendComponent = (function () {
     function LegendComponent(cd) {
         this.cd = cd;
         this.labelClick = new EventEmitter();

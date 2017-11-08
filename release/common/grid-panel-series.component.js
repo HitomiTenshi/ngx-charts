@@ -1,5 +1,5 @@
 import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
-var GridPanelSeriesComponent = /** @class */ (function () {
+var GridPanelSeriesComponent = (function () {
     function GridPanelSeriesComponent() {
     }
     GridPanelSeriesComponent.prototype.ngOnChanges = function (changes) {

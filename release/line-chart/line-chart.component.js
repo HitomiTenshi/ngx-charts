@@ -16,7 +16,7 @@ import { calculateViewDimensions } from '../common/view-dimensions.helper';
 import { ColorHelper } from '../common/color.helper';
 import { BaseChartComponent } from '../common/base-chart.component';
 import { id } from '../utils/id';
-var LineChartComponent = /** @class */ (function (_super) {
+var LineChartComponent = (function (_super) {
     __extends(LineChartComponent, _super);
     function LineChartComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;

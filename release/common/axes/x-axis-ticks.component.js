@@ -1,7 +1,7 @@
 import { Component, Input, Output, EventEmitter, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { trimLabel } from '../trim-label.helper';
 import { reduceTicks } from './ticks.helper';
-var XAxisTicksComponent = /** @class */ (function () {
+var XAxisTicksComponent = (function () {
     function XAxisTicksComponent() {
         this.tickArguments = [5];
         this.tickStroke = '#ccc';

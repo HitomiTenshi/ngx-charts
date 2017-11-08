@@ -2,7 +2,7 @@ import { Component, Input, Output, EventEmitter, HostListener, ElementRef, Chang
 import { select } from 'd3-selection';
 import { roundedRect } from '../common/shape.helper';
 import { id } from '../utils/id';
-var BarComponent = /** @class */ (function () {
+var BarComponent = (function () {
     function BarComponent(element) {
         this.roundEdges = true;
         this.gradient = false;

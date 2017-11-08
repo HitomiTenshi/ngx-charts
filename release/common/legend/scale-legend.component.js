@@ -1,6 +1,6 @@
 import { Component, Input, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
-var ScaleLegendComponent = /** @class */ (function () {
+var ScaleLegendComponent = (function () {
     function ScaleLegendComponent(sanitizer) {
         this.sanitizer = sanitizer;
     }

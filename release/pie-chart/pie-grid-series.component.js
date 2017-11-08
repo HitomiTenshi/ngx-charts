@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter, ElementRef, ChangeDetectionStrategy } from '@angular/core';
 import { pie } from 'd3-shape';
-var PieGridSeriesComponent = /** @class */ (function () {
+var PieGridSeriesComponent = (function () {
     function PieGridSeriesComponent(element) {
         this.innerRadius = 70;
         this.outerRadius = 80;

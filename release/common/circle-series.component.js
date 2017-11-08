@@ -2,7 +2,7 @@ import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy } from 
 import { trigger, style, animate, transition } from '@angular/animations';
 import { formatLabel } from '../common/label.helper';
 import { id } from '../utils/id';
-var CircleSeriesComponent = /** @class */ (function () {
+var CircleSeriesComponent = (function () {
     function CircleSeriesComponent() {
         this.type = 'standard';
         this.tooltipDisabled = false;
@@ -61,11 +61,8 @@ var CircleSeriesComponent = /** @class */ (function () {
                 else {
                     color = _this.colors.getColor(seriesName);
                 }
-                var data = {
-                    series: seriesName,
-                    value: value,
-                    name: label
-                };
+                var data = d;
+                data.series = seriesName;
                 return {
                     classNames: ["circle-data-" + i],
                     value: value,

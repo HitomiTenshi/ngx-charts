@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
-var TreeMapCellSeriesComponent = /** @class */ (function () {
+var TreeMapCellSeriesComponent = (function () {
     function TreeMapCellSeriesComponent() {
         this.gradient = false;
         this.tooltipDisabled = false;

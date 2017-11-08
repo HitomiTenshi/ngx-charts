@@ -2,7 +2,7 @@ import { Output, EventEmitter } from '@angular/core';
 /**
  * Visibility Observer
  */
-var VisibilityObserver = /** @class */ (function () {
+var VisibilityObserver = (function () {
     function VisibilityObserver(element, zone) {
         this.element = element;
         this.zone = zone;

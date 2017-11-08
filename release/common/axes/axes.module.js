@@ -5,7 +5,7 @@ import { XAxisTicksComponent } from './x-axis-ticks.component';
 import { YAxisComponent } from './y-axis.component';
 import { YAxisTicksComponent } from './y-axis-ticks.component';
 import { CommonModule } from '@angular/common';
-var AxesModule = /** @class */ (function () {
+var AxesModule = (function () {
     function AxesModule() {
     }
     AxesModule.decorators = [

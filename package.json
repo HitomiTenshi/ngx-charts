@@ -1,6 +1,6 @@
 {
   "name": "@swimlane/ngx-charts",
-  "version": "6.1.0",
+  "version": "6.1.0-custom",
   "description": "Declarative Charting Framework for Angular2 and beyond!",
   "main": "release/index.js",
   "typings": "release/index.d.ts",
@@ -150,7 +150,7 @@
     "tslint": "^5.7.0",
     "tslint-config-swimlane": "^3.0.3",
     "tslint-loader": "^3.3.0",
-    "typescript": "^2.5.2",
+    "typescript": "2.4.2",
     "uglify-js": "^3.1.0",
     "url-loader": "^0.5.7",
     "web-animations-js": "^2.2.2",

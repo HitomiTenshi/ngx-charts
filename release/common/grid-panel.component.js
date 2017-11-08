@@ -1,5 +1,5 @@
 import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
-var GridPanelComponent = /** @class */ (function () {
+var GridPanelComponent = (function () {
     function GridPanelComponent() {
     }
     GridPanelComponent.decorators = [

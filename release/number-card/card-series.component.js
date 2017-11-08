@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
 import { invertColor } from '../utils/color-utils';
-var CardSeriesComponent = /** @class */ (function () {
+var CardSeriesComponent = (function () {
     function CardSeriesComponent() {
         this.innerPadding = 15;
         this.emptyColor = 'rgba(0, 0, 0, 0)';

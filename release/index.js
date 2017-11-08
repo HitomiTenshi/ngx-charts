@@ -1,5 +1,5 @@
 /**
- * ngx-charts v"6.1.0" (https://github.com/swimlane/ngx-charts)
+ * ngx-charts v"6.1.0-custom" (https://github.com/swimlane/ngx-charts)
  * Copyright 2016
  * Licensed under MIT
  */
@@ -223,7 +223,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "ngx-charts-number-card .cell .trimmed-label {\n  font-size: 12px;\n  pointer-events: none;\n  overflow: hidden;\n  text-align: left;\n  line-height: 1em; }\n  ngx-charts-number-card .cell .trimmed-label p {\n    overflow: hidden;\n    white-space: nowrap;\n    text-overflow: ellipsis;\n    width: 100%;\n    padding: 0;\n    margin: 0; }\n\nngx-charts-number-card .cell .value-text {\n  pointer-events: none; }\n\nngx-charts-number-card .number-card.clickable .cell .card, ngx-charts-number-card .number-card.clickable .cell .card-band {\n  cursor: pointer; }\n", ""]);
+exports.push([module.i, "ngx-charts-number-card .cell .trimmed-label {\n  font-size: 12px;\n  pointer-events: none;\n  overflow: hidden;\n  text-align: left;\n  line-height: 1em; }\n  ngx-charts-number-card .cell .trimmed-label p {\n    overflow: hidden;\n    white-space: nowrap;\n    text-overflow: ellipsis;\n    width: 100%;\n    padding: 0;\n    margin: 0; }\n\nngx-charts-number-card .cell .value-text,\nngx-charts-number-card .cell .trimmed-label {\n  pointer-events: none;\n  dominant-baseline: hanging; }\n\nngx-charts-number-card .number-card.clickable .cell .card, ngx-charts-number-card .number-card.clickable .cell .card-band {\n  cursor: pointer; }\n", ""]);
 
 // exports
 
@@ -429,7 +429,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var AreaChartNormalizedComponent = /** @class */ (function (_super) {
+var AreaChartNormalizedComponent = (function (_super) {
     __extends(AreaChartNormalizedComponent, _super);
     function AreaChartNormalizedComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
@@ -883,7 +883,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var AreaChartStackedComponent = /** @class */ (function (_super) {
+var AreaChartStackedComponent = (function (_super) {
     __extends(AreaChartStackedComponent, _super);
     function AreaChartStackedComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
@@ -1369,7 +1369,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var AreaChartComponent = /** @class */ (function (_super) {
+var AreaChartComponent = (function (_super) {
     __extends(AreaChartComponent, _super);
     function AreaChartComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
@@ -1802,7 +1802,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var AreaChartModule = /** @class */ (function () {
+var AreaChartModule = (function () {
     function AreaChartModule() {
     }
     AreaChartModule = __decorate([
@@ -1851,7 +1851,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var AreaSeriesComponent = /** @class */ (function () {
+var AreaSeriesComponent = (function () {
     function AreaSeriesComponent() {
         this.stacked = false;
         this.normalized = false;
@@ -2082,7 +2082,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var BarChartModule = /** @class */ (function () {
+var BarChartModule = (function () {
     function BarChartModule() {
     }
     BarChartModule = __decorate([
@@ -2162,7 +2162,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var BarHorizontal2DComponent = /** @class */ (function (_super) {
+var BarHorizontal2DComponent = (function (_super) {
     __extends(BarHorizontal2DComponent, _super);
     function BarHorizontal2DComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
@@ -2503,7 +2503,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var BarHorizontalNormalizedComponent = /** @class */ (function (_super) {
+var BarHorizontalNormalizedComponent = (function (_super) {
     __extends(BarHorizontalNormalizedComponent, _super);
     function BarHorizontalNormalizedComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
@@ -2807,7 +2807,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var BarHorizontalStackedComponent = /** @class */ (function (_super) {
+var BarHorizontalStackedComponent = (function (_super) {
     __extends(BarHorizontalStackedComponent, _super);
     function BarHorizontalStackedComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
@@ -3125,7 +3125,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var BarHorizontalComponent = /** @class */ (function (_super) {
+var BarHorizontalComponent = (function (_super) {
     __extends(BarHorizontalComponent, _super);
     function BarHorizontalComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
@@ -3392,7 +3392,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var BarVertical2DComponent = /** @class */ (function (_super) {
+var BarVertical2DComponent = (function (_super) {
     __extends(BarVertical2DComponent, _super);
     function BarVertical2DComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
@@ -3738,7 +3738,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var BarVerticalNormalizedComponent = /** @class */ (function (_super) {
+var BarVerticalNormalizedComponent = (function (_super) {
     __extends(BarVerticalNormalizedComponent, _super);
     function BarVerticalNormalizedComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
@@ -4042,7 +4042,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var BarVerticalStackedComponent = /** @class */ (function (_super) {
+var BarVerticalStackedComponent = (function (_super) {
     __extends(BarVerticalStackedComponent, _super);
     function BarVerticalStackedComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
@@ -4360,7 +4360,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var BarVerticalComponent = /** @class */ (function (_super) {
+var BarVerticalComponent = (function (_super) {
     __extends(BarVerticalComponent, _super);
     function BarVerticalComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
@@ -4612,7 +4612,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var BarComponent = /** @class */ (function () {
+var BarComponent = (function () {
     function BarComponent(element) {
         this.roundEdges = true;
         this.gradient = false;
@@ -4938,7 +4938,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var SeriesHorizontal = /** @class */ (function () {
+var SeriesHorizontal = (function () {
     function SeriesHorizontal() {
         this.type = 'standard';
         this.tooltipDisabled = false;
@@ -5160,7 +5160,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var SeriesVerticalComponent = /** @class */ (function () {
+var SeriesVerticalComponent = (function () {
     function SeriesVerticalComponent() {
         this.type = 'standard';
         this.tooltipDisabled = false;
@@ -5410,7 +5410,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var BubbleChartComponent = /** @class */ (function (_super) {
+var BubbleChartComponent = (function (_super) {
     __extends(BubbleChartComponent, _super);
     function BubbleChartComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
@@ -5781,7 +5781,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var BubbleChartModule = /** @class */ (function () {
+var BubbleChartModule = (function () {
     function BubbleChartModule() {
     }
     BubbleChartModule = __decorate([
@@ -5904,7 +5904,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var BubbleSeriesComponent = /** @class */ (function () {
+var BubbleSeriesComponent = (function () {
     function BubbleSeriesComponent() {
         this.tooltipDisabled = false;
         this.select = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
@@ -5934,13 +5934,10 @@ var BubbleSeriesComponent = /** @class */ (function () {
                     _this.colors.getColor(seriesName);
                 var isActive = !_this.activeEntries.length ? true : _this.isActive({ name: seriesName });
                 var opacity = isActive ? 1 : 0.3;
-                var data = {
-                    series: seriesName,
-                    name: d.name,
-                    value: d.y,
-                    x: d.x,
-                    radius: d.r
-                };
+                var data = d;
+                data.series = seriesName;
+                data.value = d.y;
+                data.radius = d.r;
                 return {
                     data: data,
                     x: x,
@@ -6140,7 +6137,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var AreaComponent = /** @class */ (function () {
+var AreaComponent = (function () {
     function AreaComponent(element) {
         this.opacity = 1;
         this.startOpacity = 0.5;
@@ -6294,7 +6291,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var AxesModule = /** @class */ (function () {
+var AxesModule = (function () {
     function AxesModule() {
     }
     AxesModule = __decorate([
@@ -6328,7 +6325,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var AxisLabelComponent = /** @class */ (function () {
+var AxisLabelComponent = (function () {
     function AxisLabelComponent(element) {
         this.textHeight = 25;
         this.margin = 5;
@@ -6441,7 +6438,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var XAxisTicksComponent = /** @class */ (function () {
+var XAxisTicksComponent = (function () {
     function XAxisTicksComponent() {
         this.tickArguments = [5];
         this.tickStroke = '#ccc';
@@ -6626,7 +6623,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var XAxisComponent = /** @class */ (function () {
+var XAxisComponent = (function () {
     function XAxisComponent() {
         this.showGridLines = false;
         this.xOrient = 'bottom';
@@ -6740,7 +6737,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var YAxisTicksComponent = /** @class */ (function () {
+var YAxisTicksComponent = (function () {
     function YAxisTicksComponent() {
         this.tickArguments = [5];
         this.tickStroke = '#ccc';
@@ -6963,7 +6960,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var YAxisComponent = /** @class */ (function () {
+var YAxisComponent = (function () {
     function YAxisComponent() {
         this.showGridLines = false;
         this.yOrient = 'left';
@@ -7121,7 +7118,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var BaseChartComponent = /** @class */ (function () {
+var BaseChartComponent = (function () {
     function BaseChartComponent(chartElement, zone, cd) {
         this.chartElement = chartElement;
         this.zone = zone;
@@ -7369,7 +7366,7 @@ var COMPONENTS = [
     __WEBPACK_IMPORTED_MODULE_13__timeline__["a" /* Timeline */],
     __WEBPACK_IMPORTED_MODULE_3__legend__["a" /* AdvancedLegendComponent */]
 ];
-var ChartCommonModule = /** @class */ (function () {
+var ChartCommonModule = (function () {
     function ChartCommonModule() {
     }
     ChartCommonModule = __decorate([
@@ -7423,7 +7420,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var ChartComponent = /** @class */ (function () {
+var ChartComponent = (function () {
     function ChartComponent(vcr, tooltipService) {
         this.vcr = vcr;
         this.tooltipService = tooltipService;
@@ -7568,7 +7565,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var CircleSeriesComponent = /** @class */ (function () {
+var CircleSeriesComponent = (function () {
     function CircleSeriesComponent() {
         this.type = 'standard';
         this.tooltipDisabled = false;
@@ -7627,11 +7624,8 @@ var CircleSeriesComponent = /** @class */ (function () {
                 else {
                     color = _this.colors.getColor(seriesName);
                 }
-                var data = {
-                    series: seriesName,
-                    value: value,
-                    name: label
-                };
+                var data = d;
+                data.series = seriesName;
                 return {
                     classNames: ["circle-data-" + i],
                     value: value,
@@ -7811,7 +7805,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var CircleComponent = /** @class */ (function () {
+var CircleComponent = (function () {
     function CircleComponent() {
         this.select = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
         this.activate = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
@@ -7925,7 +7919,7 @@ var CircleComponent = /** @class */ (function () {
 
 
 
-var ColorHelper = /** @class */ (function () {
+var ColorHelper = (function () {
     function ColorHelper(scheme, type, domain, customColors) {
         if (typeof (scheme) === 'string') {
             scheme = __WEBPACK_IMPORTED_MODULE_2__utils_color_sets__["a" /* colorSets */].find(function (cs) {
@@ -8092,7 +8086,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * @export
  * @class CountUpDirective
  */
-var CountUpDirective = /** @class */ (function () {
+var CountUpDirective = (function () {
     function CountUpDirective(cd, element) {
         this.cd = cd;
         this.countDuration = 1;
@@ -8391,7 +8385,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var GridPanelSeriesComponent = /** @class */ (function () {
+var GridPanelSeriesComponent = (function () {
     function GridPanelSeriesComponent() {
     }
     GridPanelSeriesComponent.prototype.ngOnChanges = function (changes) {
@@ -8494,7 +8488,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var GridPanelComponent = /** @class */ (function () {
+var GridPanelComponent = (function () {
     function GridPanelComponent() {
     }
     __decorate([
@@ -8675,7 +8669,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var AdvancedLegendComponent = /** @class */ (function () {
+var AdvancedLegendComponent = (function () {
     function AdvancedLegendComponent() {
         this.label = 'Total';
         this.animations = true;
@@ -8702,7 +8696,7 @@ var AdvancedLegendComponent = /** @class */ (function () {
         return this.data.map(function (d, index) {
             var label = Object(__WEBPACK_IMPORTED_MODULE_2__label_helper__["a" /* formatLabel */])(d.name);
             var value = d.value;
-            var percentage = value / _this.total * 100;
+            var percentage = (_this.total > 0) ? value / _this.total * 100 : 0;
             var color = _this.colors.getColor(label);
             return {
                 value: value,
@@ -8801,7 +8795,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var LegendEntryComponent = /** @class */ (function () {
+var LegendEntryComponent = (function () {
     function LegendEntryComponent() {
         this.isActive = false;
         this.select = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
@@ -8914,7 +8908,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var LegendComponent = /** @class */ (function () {
+var LegendComponent = (function () {
     function LegendComponent(cd) {
         this.cd = cd;
         this.labelClick = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
@@ -9056,7 +9050,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var ScaleLegendComponent = /** @class */ (function () {
+var ScaleLegendComponent = (function () {
     function ScaleLegendComponent(sanitizer) {
         this.sanitizer = sanitizer;
     }
@@ -9180,7 +9174,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var SvgLinearGradientComponent = /** @class */ (function () {
+var SvgLinearGradientComponent = (function () {
     function SvgLinearGradientComponent() {
         this.orientation = 'vertical';
     }
@@ -9239,7 +9233,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var SvgRadialGradientComponent = /** @class */ (function () {
+var SvgRadialGradientComponent = (function () {
     function SvgRadialGradientComponent() {
         this.endOpacity = 1;
         this.cx = 0;
@@ -9392,7 +9386,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var Timeline = /** @class */ (function () {
+var Timeline = (function () {
     function Timeline(element, cd) {
         this.cd = cd;
         this.height = 50;
@@ -9598,7 +9592,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var TooltipArea = /** @class */ (function () {
+var TooltipArea = (function () {
     function TooltipArea(renderer) {
         this.renderer = renderer;
         this.anchorOpacity = 0;
@@ -9859,7 +9853,7 @@ var AlignmentTypes;
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InjectionRegistery; });
-var InjectionRegistery = /** @class */ (function () {
+var InjectionRegistery = (function () {
     function InjectionRegistery(injectionService) {
         this.injectionService = injectionService;
         this.defaults = {};
@@ -9956,7 +9950,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * @export
  * @class InjectionService
  */
-var InjectionService = /** @class */ (function () {
+var InjectionService = (function () {
     function InjectionService(applicationRef, componentFactoryResolver, injector) {
         this.applicationRef = applicationRef;
         this.componentFactoryResolver = componentFactoryResolver;
@@ -10153,7 +10147,7 @@ function horizontalPosition(elDimensions, popoverDimensions, alignment) {
  * @export
  * @class PositionHelper
  */
-var PositionHelper = /** @class */ (function () {
+var PositionHelper = (function () {
     function PositionHelper() {
     }
     /**
@@ -10465,7 +10459,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var TooltipContentComponent = /** @class */ (function () {
+var TooltipContentComponent = (function () {
     function TooltipContentComponent(element, renderer) {
         this.element = element;
         this.renderer = renderer;
@@ -10610,7 +10604,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var TooltipDirective = /** @class */ (function () {
+var TooltipDirective = (function () {
     function TooltipDirective(tooltipService, viewContainerRef, renderer) {
         this.tooltipService = tooltipService;
         this.viewContainerRef = viewContainerRef;
@@ -10909,7 +10903,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var TooltipModule = /** @class */ (function () {
+var TooltipModule = (function () {
     function TooltipModule() {
     }
     TooltipModule = __decorate([
@@ -10961,7 +10955,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var TooltipService = /** @class */ (function (_super) {
+var TooltipService = (function (_super) {
     __extends(TooltipService, _super);
     function TooltipService(injectionService) {
         var _this = _super.call(this, injectionService) || this;
@@ -11113,7 +11107,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var ForceDirectedGraphComponent = /** @class */ (function (_super) {
+var ForceDirectedGraphComponent = (function (_super) {
     __extends(ForceDirectedGraphComponent, _super);
     function ForceDirectedGraphComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
@@ -11325,7 +11319,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ForceDirectedGraphModule = /** @class */ (function () {
+var ForceDirectedGraphModule = (function () {
     function ForceDirectedGraphModule() {
     }
     ForceDirectedGraphModule = __decorate([
@@ -11382,7 +11376,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var GaugeArcComponent = /** @class */ (function () {
+var GaugeArcComponent = (function () {
     function GaugeArcComponent() {
         this.isActive = false;
         this.tooltipDisabled = false;
@@ -11484,7 +11478,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var GaugeAxisComponent = /** @class */ (function () {
+var GaugeAxisComponent = (function () {
     function GaugeAxisComponent() {
         this.rotate = '';
     }
@@ -11664,7 +11658,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var GaugeComponent = /** @class */ (function (_super) {
+var GaugeComponent = (function (_super) {
     __extends(GaugeComponent, _super);
     function GaugeComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
@@ -11856,7 +11850,7 @@ var GaugeComponent = /** @class */ (function (_super) {
         });
         this.activeEntries.splice(idx, 1);
         this.activeEntries = this.activeEntries.slice();
-        this.deactivate.emit({ value: event, entries: this.activeEntries });
+        this.deactivate.emit({ value: item, entries: this.activeEntries });
     };
     GaugeComponent.prototype.isActive = function (entry) {
         if (!this.activeEntries)
@@ -12005,7 +11999,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var GaugeModule = /** @class */ (function () {
+var GaugeModule = (function () {
     function GaugeModule() {
     }
     GaugeModule = __decorate([
@@ -12101,7 +12095,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var LinearGaugeComponent = /** @class */ (function (_super) {
+var LinearGaugeComponent = (function (_super) {
     __extends(LinearGaugeComponent, _super);
     function LinearGaugeComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
@@ -12283,7 +12277,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var HeatCellSeriesComponent = /** @class */ (function () {
+var HeatCellSeriesComponent = (function () {
     function HeatCellSeriesComponent() {
         this.tooltipDisabled = false;
         this.animations = true;
@@ -12412,7 +12406,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var HeatMapCellComponent = /** @class */ (function () {
+var HeatMapCellComponent = (function () {
     function HeatMapCellComponent(element) {
         this.gradient = false;
         this.animations = true;
@@ -12547,7 +12541,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var HeatMapComponent = /** @class */ (function (_super) {
+var HeatMapComponent = (function (_super) {
     __extends(HeatMapComponent, _super);
     function HeatMapComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
@@ -12833,7 +12827,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var HeatMapModule = /** @class */ (function () {
+var HeatMapModule = (function () {
     function HeatMapModule() {
     }
     HeatMapModule = __decorate([
@@ -13071,7 +13065,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var LineChartComponent = /** @class */ (function (_super) {
+var LineChartComponent = (function (_super) {
     __extends(LineChartComponent, _super);
     function LineChartComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
@@ -13545,7 +13539,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var LineChartModule = /** @class */ (function () {
+var LineChartModule = (function () {
     function LineChartModule() {
     }
     LineChartModule = __decorate([
@@ -13594,7 +13588,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var LineSeriesComponent = /** @class */ (function () {
+var LineSeriesComponent = (function () {
     function LineSeriesComponent() {
         this.animations = true;
     }
@@ -13800,7 +13794,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var LineComponent = /** @class */ (function () {
+var LineComponent = (function () {
     function LineComponent(element) {
         this.element = element;
         this.fill = 'none';
@@ -13921,7 +13915,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var NgxChartsModule = /** @class */ (function () {
+var NgxChartsModule = (function () {
     function NgxChartsModule() {
     }
     NgxChartsModule = __decorate([
@@ -13968,7 +13962,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var CardSeriesComponent = /** @class */ (function () {
+var CardSeriesComponent = (function () {
     function CardSeriesComponent() {
         this.innerPadding = 15;
         this.emptyColor = 'rgba(0, 0, 0, 0)';
@@ -14143,7 +14137,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var CardComponent = /** @class */ (function () {
+var CardComponent = (function () {
     function CardComponent(element, cd, zone) {
         this.cd = cd;
         this.zone = zone;
@@ -14315,7 +14309,7 @@ var CardComponent = /** @class */ (function () {
     CardComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'g[ngx-charts-card]',
-            template: "\n    <svg:g\n      [attr.transform]=\"transform\"\n      class=\"cell\"\n      (click)=\"onClick()\">\n      <svg:rect\n        class=\"card\"\n        [style.fill]=\"color\"\n        [attr.width]=\"cardWidth\"\n        [attr.height]=\"cardHeight\"\n        rx=\"3\"\n        ry=\"3\"\n      />\n      <svg:path\n        *ngIf=\"bandColor && bandColor !== color\"\n        class=\"card-band\"\n        [attr.fill]=\"bandColor\"\n        [attr.transform]=\"transformBand\"\n        stroke=\"none\"\n        [attr.d]=\"bandPath\"\n      />\n      <title>{{label}}</title>\n      <svg:foreignObject\n        class=\"trimmed-label\"\n        x=\"5\"\n        [attr.x]=\"textPadding[3]\"\n        [attr.y]=\"cardHeight - textPadding[2]\"\n        [attr.width]=\"textWidth\"\n        [attr.height]=\"labelFontSize + textPadding[2]\"\n        alignment-baseline=\"hanging\">\n        <xhtml:p\n          [style.color]=\"textColor\"\n          [style.fontSize.px]=\"labelFontSize\"\n          [style.lineHeight.px]=\"labelFontSize\"\n          [innerHTML]=\"formattedLabel\">\n        </xhtml:p>\n      </svg:foreignObject>\n      <svg:text #textEl\n        class=\"value-text\"\n        [attr.x]=\"textPadding[3]\"\n        [attr.y]=\"textPadding[0]\"\n        [style.fill]=\"textColor\"\n        text-anchor=\"start\"\n        alignment-baseline=\"hanging\"\n        [style.font-size.pt]=\"textFontSize\">\n        {{value}}\n      </svg:text>\n    </svg:g>\n  ",
+            template: "\n    <svg:g\n      [attr.transform]=\"transform\"\n      class=\"cell\"\n      (click)=\"onClick()\">\n      <svg:rect\n        class=\"card\"\n        [style.fill]=\"color\"\n        [attr.width]=\"cardWidth\"\n        [attr.height]=\"cardHeight\"\n        rx=\"3\"\n        ry=\"3\"\n      />\n      <svg:path\n        *ngIf=\"bandColor && bandColor !== color\"\n        class=\"card-band\"\n        [attr.fill]=\"bandColor\"\n        [attr.transform]=\"transformBand\"\n        stroke=\"none\"\n        [attr.d]=\"bandPath\"\n      />\n      <title>{{label}}</title>\n      <svg:text\n        class=\"trimmed-label\"\n        x=\"5\"\n        [attr.x]=\"textPadding[3]\"\n        [attr.y]=\"cardHeight - textPadding[2]\"\n        [attr.width]=\"textWidth\"\n        [attr.height]=\"labelFontSize + textPadding[2]\"\n        alignment-baseline=\"hanging\"\n        [style.fill]=\"textColor\"\n        [style.fontSize.px]=\"labelFontSize\"\n        [style.lineHeight.px]=\"labelFontSize\">\n        {{formattedLabel}}\n      </svg:text>\n\n      <svg:text #textEl\n        class=\"value-text\"\n        [attr.x]=\"textPadding[3]\"\n        [attr.y]=\"textPadding[0]\"\n        [style.fill]=\"textColor\"\n        text-anchor=\"start\"\n        alignment-baseline=\"hanging\"\n        [style.font-size.pt]=\"textFontSize\">\n        {{value}}\n      </svg:text>\n    </svg:g>\n  ",
             changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectionStrategy"].OnPush
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectorRef"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"]])
@@ -14385,7 +14379,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var NumberCardComponent = /** @class */ (function (_super) {
+var NumberCardComponent = (function (_super) {
     __extends(NumberCardComponent, _super);
     function NumberCardComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
@@ -14505,7 +14499,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var NumberCardModule = /** @class */ (function () {
+var NumberCardModule = (function () {
     function NumberCardModule() {
     }
     NumberCardModule = __decorate([
@@ -14578,7 +14572,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var AdvancedPieChartComponent = /** @class */ (function (_super) {
+var AdvancedPieChartComponent = (function (_super) {
     __extends(AdvancedPieChartComponent, _super);
     function AdvancedPieChartComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
@@ -14698,7 +14692,7 @@ var AdvancedPieChartComponent = /** @class */ (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pie_grid_component__ = __webpack_require__("./src/pie-chart/pie-grid.component.ts");
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pie_series_component__ = __webpack_require__("./src/pie-chart/pie-series.component.ts");
-/* inactive harmony reexport namespace */
+/* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pie_label_component__ = __webpack_require__("./src/pie-chart/pie-label.component.ts");
 /* unused harmony namespace reexport */
 /* unused harmony namespace reexport */
@@ -14741,7 +14735,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var PieArcComponent = /** @class */ (function () {
+var PieArcComponent = (function () {
     function PieArcComponent(element) {
         this.startAngle = 0;
         this.endAngle = Math.PI * 2;
@@ -14963,7 +14957,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var PieChartComponent = /** @class */ (function (_super) {
+var PieChartComponent = (function (_super) {
     __extends(PieChartComponent, _super);
     function PieChartComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
@@ -15181,7 +15175,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var PieChartModule = /** @class */ (function () {
+var PieChartModule = (function () {
     function PieChartModule() {
     }
     PieChartModule = __decorate([
@@ -15234,7 +15228,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var PieGridSeriesComponent = /** @class */ (function () {
+var PieGridSeriesComponent = (function () {
     function PieGridSeriesComponent(element) {
         this.innerRadius = 70;
         this.outerRadius = 80;
@@ -15384,7 +15378,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var PieGridComponent = /** @class */ (function (_super) {
+var PieGridComponent = (function (_super) {
     __extends(PieGridComponent, _super);
     function PieGridComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
@@ -15526,7 +15520,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var PieLabelComponent = /** @class */ (function () {
+var PieLabelComponent = (function () {
     function PieLabelComponent() {
         this.animations = true;
         this.isIE = /(edge|msie|trident)/i.test(navigator.userAgent);
@@ -15665,7 +15659,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var PieSeriesComponent = /** @class */ (function () {
+var PieSeriesComponent = (function () {
     function PieSeriesComponent() {
         this.series = [];
         this.innerRadius = 60;
@@ -15928,7 +15922,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var twoPI = 2 * Math.PI;
-var PolarChartComponent = /** @class */ (function (_super) {
+var PolarChartComponent = (function (_super) {
     __extends(PolarChartComponent, _super);
     function PolarChartComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
@@ -16376,7 +16370,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var PolarChartModule = /** @class */ (function () {
+var PolarChartModule = (function () {
     function PolarChartModule() {
     }
     PolarChartModule = __decorate([
@@ -16423,7 +16417,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var PolarSeriesComponent = /** @class */ (function () {
+var PolarSeriesComponent = (function () {
     function PolarSeriesComponent() {
         this.tooltipDisabled = false;
         this.gradient = false;
@@ -16448,11 +16442,8 @@ var PolarSeriesComponent = /** @class */ (function () {
             var r = _this.getRadius(d);
             var value = d.value;
             var color = _this.colors.getColor(linearScaleType ? Math.abs(value) : seriesName);
-            var cData = {
-                series: seriesName,
-                value: value,
-                name: d.name
-            };
+            var cData = d;
+            cData.series = seriesName;
             return {
                 data: cData,
                 cx: r * Math.sin(a),
@@ -16607,8 +16598,13 @@ var PolarSeriesComponent = /** @class */ (function () {
 
 // IE11 fix
 // Ref: https://github.com/swimlane/ngx-charts/issues/386
-if (typeof SVGElement.prototype.contains === 'undefined') {
+if (typeof (SVGElement) !== 'undefined' && typeof SVGElement.prototype.contains === 'undefined') {
     SVGElement.prototype.contains = HTMLDivElement.prototype.contains;
+}
+// IE11 fix (http://caniuse.com/#search=classList)
+if (!('classList' in document.createElementNS('http://www.w3.org/2000/svg', 'g'))) {
+    var descr = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'classList');
+    Object.defineProperty(SVGElement.prototype, 'classList', descr);
 }
 
 
@@ -16654,7 +16650,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var TreeMapCellSeriesComponent = /** @class */ (function () {
+var TreeMapCellSeriesComponent = (function () {
     function TreeMapCellSeriesComponent() {
         this.gradient = false;
         this.tooltipDisabled = false;
@@ -16779,7 +16775,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var TreeMapCellComponent = /** @class */ (function () {
+var TreeMapCellComponent = (function () {
     function TreeMapCellComponent(element) {
         this.gradient = false;
         this.animations = true;
@@ -16985,7 +16981,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var TreeMapComponent = /** @class */ (function (_super) {
+var TreeMapComponent = (function (_super) {
     __extends(TreeMapComponent, _super);
     function TreeMapComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
@@ -17106,7 +17102,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var TreeMapModule = /** @class */ (function () {
+var TreeMapModule = (function () {
     function TreeMapModule() {
     }
     TreeMapModule = __decorate([
@@ -17559,7 +17555,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 /**
  * Visibility Observer
  */
-var VisibilityObserver = /** @class */ (function () {
+var VisibilityObserver = (function () {
     function VisibilityObserver(element, zone) {
         this.element = element;
         this.zone = zone;

@@ -3,7 +3,7 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/fromEvent';
 import 'rxjs/add/operator/debounceTime';
 import { VisibilityObserver } from '../utils';
-var BaseChartComponent = /** @class */ (function () {
+var BaseChartComponent = (function () {
     function BaseChartComponent(chartElement, zone, cd) {
         this.chartElement = chartElement;
         this.zone = zone;

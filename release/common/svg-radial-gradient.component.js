@@ -1,5 +1,5 @@
 import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
-var SvgRadialGradientComponent = /** @class */ (function () {
+var SvgRadialGradientComponent = (function () {
     function SvgRadialGradientComponent() {
         this.endOpacity = 1;
         this.cx = 0;

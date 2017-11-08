@@ -2,7 +2,7 @@ import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy } from 
 import { max } from 'd3-array';
 import { arc, pie } from 'd3-shape';
 import { formatLabel } from '../common/label.helper';
-var PieSeriesComponent = /** @class */ (function () {
+var PieSeriesComponent = (function () {
     function PieSeriesComponent() {
         this.series = [];
         this.innerRadius = 60;

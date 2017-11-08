@@ -13,7 +13,7 @@ import { treemap, stratify } from 'd3-hierarchy';
 import { BaseChartComponent } from '../common/base-chart.component';
 import { calculateViewDimensions } from '../common/view-dimensions.helper';
 import { ColorHelper } from '../common/color.helper';
-var TreeMapComponent = /** @class */ (function (_super) {
+var TreeMapComponent = (function (_super) {
     __extends(TreeMapComponent, _super);
     function TreeMapComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;

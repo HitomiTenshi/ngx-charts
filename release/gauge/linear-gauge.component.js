@@ -13,7 +13,7 @@ import { scaleLinear } from 'd3-scale';
 import { BaseChartComponent } from '../common/base-chart.component';
 import { calculateViewDimensions } from '../common/view-dimensions.helper';
 import { ColorHelper } from '../common/color.helper';
-var LinearGaugeComponent = /** @class */ (function (_super) {
+var LinearGaugeComponent = (function (_super) {
     __extends(LinearGaugeComponent, _super);
     function LinearGaugeComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;

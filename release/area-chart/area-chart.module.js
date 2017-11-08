@@ -5,7 +5,7 @@ import { AreaChartStackedComponent } from './area-chart-stacked.component';
 import { AreaSeriesComponent } from './area-series.component';
 import { ChartCommonModule } from '../common/chart-common.module';
 export { AreaChartComponent, AreaChartNormalizedComponent, AreaChartStackedComponent, AreaSeriesComponent };
-var AreaChartModule = /** @class */ (function () {
+var AreaChartModule = (function () {
     function AreaChartModule() {
     }
     AreaChartModule.decorators = [

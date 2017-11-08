@@ -4,7 +4,7 @@ import { LineComponent } from './line.component';
 import { LineChartComponent } from './line-chart.component';
 import { LineSeriesComponent } from './line-series.component';
 export { LineComponent, LineChartComponent, LineSeriesComponent };
-var LineChartModule = /** @class */ (function () {
+var LineChartModule = (function () {
     function LineChartModule() {
     }
     LineChartModule.decorators = [

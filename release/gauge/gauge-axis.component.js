@@ -1,6 +1,6 @@
 import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { line } from 'd3-shape';
-var GaugeAxisComponent = /** @class */ (function () {
+var GaugeAxisComponent = (function () {
     function GaugeAxisComponent() {
         this.rotate = '';
     }

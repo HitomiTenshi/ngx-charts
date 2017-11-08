@@ -13,7 +13,7 @@ import { scaleLinear } from 'd3-scale';
 import { BaseChartComponent } from '../common/base-chart.component';
 import { calculateViewDimensions } from '../common/view-dimensions.helper';
 import { ColorHelper } from '../common/color.helper';
-var GaugeComponent = /** @class */ (function (_super) {
+var GaugeComponent = (function (_super) {
     __extends(GaugeComponent, _super);
     function GaugeComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
@@ -205,7 +205,7 @@ var GaugeComponent = /** @class */ (function (_super) {
         });
         this.activeEntries.splice(idx, 1);
         this.activeEntries = this.activeEntries.slice();
-        this.deactivate.emit({ value: event, entries: this.activeEntries });
+        this.deactivate.emit({ value: item, entries: this.activeEntries });
     };
     GaugeComponent.prototype.isActive = function (entry) {
         if (!this.activeEntries)

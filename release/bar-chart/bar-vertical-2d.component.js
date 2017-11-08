@@ -14,7 +14,7 @@ import { scaleBand, scaleLinear } from 'd3-scale';
 import { calculateViewDimensions } from '../common/view-dimensions.helper';
 import { ColorHelper } from '../common/color.helper';
 import { BaseChartComponent } from '../common/base-chart.component';
-var BarVertical2DComponent = /** @class */ (function (_super) {
+var BarVertical2DComponent = (function (_super) {
     __extends(BarVertical2DComponent, _super);
     function BarVertical2DComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;

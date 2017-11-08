@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter, ViewChild, Renderer, ChangeDetectionStrategy, } from '@angular/core';
 import { trigger, style, animate, transition } from '@angular/animations';
-var TooltipArea = /** @class */ (function () {
+var TooltipArea = (function () {
     function TooltipArea(renderer) {
         this.renderer = renderer;
         this.anchorOpacity = 0;

@@ -12,7 +12,7 @@ import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy, ViewEn
 import { calculateViewDimensions } from '../common/view-dimensions.helper';
 import { ColorHelper } from '../common/color.helper';
 import { BaseChartComponent } from '../common/base-chart.component';
-var AdvancedPieChartComponent = /** @class */ (function (_super) {
+var AdvancedPieChartComponent = (function (_super) {
     __extends(AdvancedPieChartComponent, _super);
     function AdvancedPieChartComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;

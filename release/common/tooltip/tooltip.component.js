@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 import { Input, Component, ElementRef, ViewEncapsulation, HostListener, ViewChild, HostBinding, Renderer } from '@angular/core';
 import { throttleable } from '../../utils/throttle';
 import { PositionHelper } from './position';
-var TooltipContentComponent = /** @class */ (function () {
+var TooltipContentComponent = (function () {
     function TooltipContentComponent(element, renderer) {
         this.element = element;
         this.renderer = renderer;

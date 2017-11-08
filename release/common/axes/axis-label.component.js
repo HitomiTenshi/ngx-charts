@@ -1,5 +1,5 @@
 import { Component, Input, ElementRef, ChangeDetectionStrategy } from '@angular/core';
-var AxisLabelComponent = /** @class */ (function () {
+var AxisLabelComponent = (function () {
     function AxisLabelComponent(element) {
         this.textHeight = 25;
         this.margin = 5;

@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy, HostListener } from '@angular/core';
-var CircleComponent = /** @class */ (function () {
+var CircleComponent = (function () {
     function CircleComponent() {
         this.select = new EventEmitter();
         this.activate = new EventEmitter();

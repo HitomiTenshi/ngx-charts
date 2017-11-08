@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
 import { formatLabel } from '../common/label.helper';
-var GaugeArcComponent = /** @class */ (function () {
+var GaugeArcComponent = (function () {
     function GaugeArcComponent() {
         this.isActive = false;
         this.tooltipDisabled = false;

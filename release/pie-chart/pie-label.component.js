@@ -1,7 +1,7 @@
 import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { arc } from 'd3-shape';
 import { trimLabel } from '../common/trim-label.helper';
-var PieLabelComponent = /** @class */ (function () {
+var PieLabelComponent = (function () {
     function PieLabelComponent() {
         this.animations = true;
         this.isIE = /(edge|msie|trident)/i.test(navigator.userAgent);

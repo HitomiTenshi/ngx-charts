@@ -14,7 +14,7 @@ import { ChartComponent } from '../common/charts/chart.component';
 import { BaseChartComponent } from '../common/base-chart.component';
 import { calculateViewDimensions } from '../common/view-dimensions.helper';
 import { ColorHelper } from '../common/color.helper';
-var ForceDirectedGraphComponent = /** @class */ (function (_super) {
+var ForceDirectedGraphComponent = (function (_super) {
     __extends(ForceDirectedGraphComponent, _super);
     function ForceDirectedGraphComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;

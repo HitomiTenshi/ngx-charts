@@ -1,5 +1,5 @@
 import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
-var SvgLinearGradientComponent = /** @class */ (function () {
+var SvgLinearGradientComponent = (function () {
     function SvgLinearGradientComponent() {
         this.orientation = 'vertical';
     }
