@@ -34,7 +34,7 @@ import { ColorHelper } from '../common/color.helper';
 import { BaseChartComponent } from '../common/base-chart.component';
 import { isDate, isNumber } from '../utils/types';
 var twoPI = 2 * Math.PI;
-var PolarChartComponent = /** @class */ (function (_super) {
+var PolarChartComponent = (function (_super) {
     __extends(PolarChartComponent, _super);
     function PolarChartComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;

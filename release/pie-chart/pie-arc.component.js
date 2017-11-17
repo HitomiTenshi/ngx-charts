@@ -12,7 +12,7 @@ import { interpolate } from 'd3-interpolate';
 import { select } from 'd3-selection';
 import { arc } from 'd3-shape';
 import { id } from '../utils/id';
-var PieArcComponent = /** @class */ (function () {
+var PieArcComponent = (function () {
     function PieArcComponent(element) {
         this.startAngle = 0;
         this.endAngle = Math.PI * 2;

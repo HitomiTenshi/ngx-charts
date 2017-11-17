@@ -11,7 +11,7 @@ import { Component, Input, ChangeDetectionStrategy, TemplateRef } from '@angular
 import { radialLine } from 'd3-shape';
 import { id } from '../utils/id';
 import { sortLinear, sortByTime, sortByDomain } from '../utils/sort';
-var PolarSeriesComponent = /** @class */ (function () {
+var PolarSeriesComponent = (function () {
     function PolarSeriesComponent() {
         this.tooltipDisabled = false;
         this.gradient = false;
@@ -36,11 +36,8 @@ var PolarSeriesComponent = /** @class */ (function () {
             var r = _this.getRadius(d);
             var value = d.value;
             var color = _this.colors.getColor(linearScaleType ? Math.abs(value) : seriesName);
-            var cData = {
-                series: seriesName,
-                value: value,
-                name: d.name
-            };
+            var cData = d;
+            cData.series = seriesName;
             return {
                 data: cData,
                 cx: r * Math.sin(a),

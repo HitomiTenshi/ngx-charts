@@ -8,7 +8,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component, Input, Output, ChangeDetectionStrategy, HostListener, EventEmitter } from '@angular/core';
-var LegendEntryComponent = /** @class */ (function () {
+var LegendEntryComponent = (function () {
     function LegendEntryComponent() {
         this.isActive = false;
         this.select = new EventEmitter();

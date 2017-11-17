@@ -25,7 +25,7 @@ import { calculateViewDimensions } from '../common/view-dimensions.helper';
 import { ColorHelper } from '../common/color.helper';
 import { getScaleType, getDomain, getScale } from './bubble-chart.utils';
 import { id } from '../utils/id';
-var BubbleChartComponent = /** @class */ (function (_super) {
+var BubbleChartComponent = (function (_super) {
     __extends(BubbleChartComponent, _super);
     function BubbleChartComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;

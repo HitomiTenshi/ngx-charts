@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy, TemplateRef } from '@angular/core';
 import { trigger, style, animate, transition } from '@angular/animations';
 import { formatLabel } from '../common/label.helper';
-var BubbleSeriesComponent = /** @class */ (function () {
+var BubbleSeriesComponent = (function () {
     function BubbleSeriesComponent() {
         this.tooltipDisabled = false;
         this.select = new EventEmitter();
@@ -40,13 +40,10 @@ var BubbleSeriesComponent = /** @class */ (function () {
                     _this.colors.getColor(seriesName);
                 var isActive = !_this.activeEntries.length ? true : _this.isActive({ name: seriesName });
                 var opacity = isActive ? 1 : 0.3;
-                var data = {
-                    series: seriesName,
-                    name: d.name,
-                    value: d.y,
-                    x: d.x,
-                    radius: d.r
-                };
+                var data = d;
+                data.series = seriesName;
+                data.value = d.y;
+                data.radius = d.r;
                 return {
                     data: data,
                     x: x,

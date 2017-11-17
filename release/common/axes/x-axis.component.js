@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 import { Component, Input, Output, EventEmitter, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { XAxisTicksComponent } from './x-axis-ticks.component';
-var XAxisComponent = /** @class */ (function () {
+var XAxisComponent = (function () {
     function XAxisComponent() {
         this.showGridLines = false;
         this.xOrient = 'bottom';

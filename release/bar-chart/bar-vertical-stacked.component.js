@@ -23,7 +23,7 @@ import { scaleBand, scaleLinear } from 'd3-scale';
 import { calculateViewDimensions } from '../common/view-dimensions.helper';
 import { ColorHelper } from '../common/color.helper';
 import { BaseChartComponent } from '../common/base-chart.component';
-var BarVerticalStackedComponent = /** @class */ (function (_super) {
+var BarVerticalStackedComponent = (function (_super) {
     __extends(BarVerticalStackedComponent, _super);
     function BarVerticalStackedComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;

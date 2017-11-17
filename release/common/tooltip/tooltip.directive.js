@@ -13,7 +13,7 @@ import { StyleTypes } from './style.type';
 import { AlignmentTypes } from './alignment.type';
 import { ShowTypes } from './show.type';
 import { TooltipService } from './tooltip.service';
-var TooltipDirective = /** @class */ (function () {
+var TooltipDirective = (function () {
     function TooltipDirective(tooltipService, viewContainerRef, renderer) {
         this.tooltipService = tooltipService;
         this.viewContainerRef = viewContainerRef;

@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 import { Component, Input, ViewContainerRef, ChangeDetectionStrategy, EventEmitter, Output } from '@angular/core';
 import { trigger, style, animate, transition } from '@angular/animations';
 import { TooltipService } from '../tooltip';
-var ChartComponent = /** @class */ (function () {
+var ChartComponent = (function () {
     function ChartComponent(vcr, tooltipService) {
         this.vcr = vcr;
         this.tooltipService = tooltipService;

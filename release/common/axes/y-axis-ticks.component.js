@@ -11,7 +11,7 @@ import { Component, Input, Output, ElementRef, ViewChild, EventEmitter, ChangeDe
 import { trimLabel } from '../trim-label.helper';
 import { reduceTicks } from './ticks.helper';
 import { roundedRect } from '../../common/shape.helper';
-var YAxisTicksComponent = /** @class */ (function () {
+var YAxisTicksComponent = (function () {
     function YAxisTicksComponent() {
         this.tickArguments = [5];
         this.tickStroke = '#ccc';

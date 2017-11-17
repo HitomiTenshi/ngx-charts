@@ -22,7 +22,7 @@ import { scaleLinear } from 'd3-scale';
 import { BaseChartComponent } from '../common/base-chart.component';
 import { calculateViewDimensions } from '../common/view-dimensions.helper';
 import { ColorHelper } from '../common/color.helper';
-var GaugeComponent = /** @class */ (function (_super) {
+var GaugeComponent = (function (_super) {
     __extends(GaugeComponent, _super);
     function GaugeComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;

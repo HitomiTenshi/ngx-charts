@@ -24,7 +24,7 @@ import { calculateViewDimensions } from '../common/view-dimensions.helper';
 import { ColorHelper } from '../common/color.helper';
 import { BaseChartComponent } from '../common/base-chart.component';
 import { id } from '../utils/id';
-var AreaChartStackedComponent = /** @class */ (function (_super) {
+var AreaChartStackedComponent = (function (_super) {
     __extends(AreaChartStackedComponent, _super);
     function AreaChartStackedComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;

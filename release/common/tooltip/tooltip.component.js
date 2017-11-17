@@ -12,7 +12,7 @@ import { throttleable } from '../../utils/throttle';
 import { PositionHelper, PlacementTypes } from './position';
 import { StyleTypes } from './style.type';
 import { AlignmentTypes } from './alignment.type';
-var TooltipContentComponent = /** @class */ (function () {
+var TooltipContentComponent = (function () {
     function TooltipContentComponent(element, renderer) {
         this.element = element;
         this.renderer = renderer;

@@ -8,7 +8,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component, Input, ElementRef, ChangeDetectionStrategy } from '@angular/core';
-var AxisLabelComponent = /** @class */ (function () {
+var AxisLabelComponent = (function () {
     function AxisLabelComponent(element) {
         this.textHeight = 25;
         this.margin = 5;

@@ -8,7 +8,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy, HostListener } from '@angular/core';
-var CircleComponent = /** @class */ (function () {
+var CircleComponent = (function () {
     function CircleComponent() {
         this.select = new EventEmitter();
         this.activate = new EventEmitter();

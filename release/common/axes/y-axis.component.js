@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 import { Component, Input, Output, EventEmitter, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { YAxisTicksComponent } from './y-axis-ticks.component';
-var YAxisComponent = /** @class */ (function () {
+var YAxisComponent = (function () {
     function YAxisComponent() {
         this.showGridLines = false;
         this.yOrient = 'left';

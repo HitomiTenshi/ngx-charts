@@ -21,7 +21,7 @@ import { Injectable } from '@angular/core';
 import { InjectionService } from './injection.service';
 import { InjectionRegistery } from './injection-registery.service';
 import { TooltipContentComponent } from './tooltip.component';
-var TooltipService = /** @class */ (function (_super) {
+var TooltipService = (function (_super) {
     __extends(TooltipService, _super);
     function TooltipService(injectionService) {
         var _this = _super.call(this, injectionService) || this;

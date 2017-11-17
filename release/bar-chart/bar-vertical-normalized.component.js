@@ -23,7 +23,7 @@ import { scaleBand, scaleLinear } from 'd3-scale';
 import { calculateViewDimensions } from '../common/view-dimensions.helper';
 import { ColorHelper } from '../common/color.helper';
 import { BaseChartComponent } from '../common/base-chart.component';
-var BarVerticalNormalizedComponent = /** @class */ (function (_super) {
+var BarVerticalNormalizedComponent = (function (_super) {
     __extends(BarVerticalNormalizedComponent, _super);
     function BarVerticalNormalizedComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;

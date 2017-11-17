@@ -11,7 +11,7 @@ import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { area, line } from 'd3-shape';
 import { id } from '../utils/id';
 import { sortLinear, sortByTime, sortByDomain } from '../utils/sort';
-var LineSeriesComponent = /** @class */ (function () {
+var LineSeriesComponent = (function () {
     function LineSeriesComponent() {
         this.animations = true;
     }

@@ -21,7 +21,7 @@ import { Component, Input, Output, ViewEncapsulation, EventEmitter, ChangeDetect
 import { calculateViewDimensions } from '../common/view-dimensions.helper';
 import { ColorHelper } from '../common/color.helper';
 import { BaseChartComponent } from '../common/base-chart.component';
-var PieChartComponent = /** @class */ (function (_super) {
+var PieChartComponent = (function (_super) {
     __extends(PieChartComponent, _super);
     function PieChartComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;

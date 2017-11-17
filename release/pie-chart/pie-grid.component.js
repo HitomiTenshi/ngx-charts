@@ -26,7 +26,7 @@ import { BaseChartComponent } from '../common/base-chart.component';
 import { trimLabel } from '../common/trim-label.helper';
 import { gridLayout } from '../common/grid-layout.helper';
 import { formatLabel } from '../common/label.helper';
-var PieGridComponent = /** @class */ (function (_super) {
+var PieGridComponent = (function (_super) {
     __extends(PieGridComponent, _super);
     function PieGridComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;

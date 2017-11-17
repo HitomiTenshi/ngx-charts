@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core';
 import { trimLabel } from '../trim-label.helper';
 import { formatLabel } from '../label.helper';
-var AdvancedLegendComponent = /** @class */ (function () {
+var AdvancedLegendComponent = (function () {
     function AdvancedLegendComponent() {
         this.label = 'Total';
         this.animations = true;

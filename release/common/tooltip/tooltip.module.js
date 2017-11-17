@@ -10,7 +10,7 @@ import { TooltipDirective } from './tooltip.directive';
 import { TooltipContentComponent } from './tooltip.component';
 import { TooltipService } from './tooltip.service';
 import { InjectionService } from './injection.service';
-var TooltipModule = /** @class */ (function () {
+var TooltipModule = (function () {
     function TooltipModule() {
     }
     TooltipModule = __decorate([

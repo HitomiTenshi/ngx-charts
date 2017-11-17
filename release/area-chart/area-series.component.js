@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
 import { area } from 'd3-shape';
 import { sortLinear, sortByTime, sortByDomain } from '../utils/sort';
-var AreaSeriesComponent = /** @class */ (function () {
+var AreaSeriesComponent = (function () {
     function AreaSeriesComponent() {
         this.stacked = false;
         this.normalized = false;

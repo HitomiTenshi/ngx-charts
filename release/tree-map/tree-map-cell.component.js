@@ -12,7 +12,7 @@ import { select } from 'd3-selection';
 import { invertColor } from '../utils/color-utils';
 import { trimLabel } from '../common/trim-label.helper';
 import { id } from '../utils/id';
-var TreeMapCellComponent = /** @class */ (function () {
+var TreeMapCellComponent = (function () {
     function TreeMapCellComponent(element) {
         this.gradient = false;
         this.animations = true;

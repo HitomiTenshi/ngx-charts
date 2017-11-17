@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 import { Component, Input, Output, EventEmitter, ElementRef, ChangeDetectionStrategy } from '@angular/core';
 import { select } from 'd3-selection';
 import { id } from '../utils/id';
-var HeatMapCellComponent = /** @class */ (function () {
+var HeatMapCellComponent = (function () {
     function HeatMapCellComponent(element) {
         this.gradient = false;
         this.animations = true;
