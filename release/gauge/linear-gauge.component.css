@@ -2,5 +2,8 @@
   cursor: pointer; }
   .linear-gauge .background-bar path {
     fill: rgba(0, 0, 0, 0.05); }
+  .linear-gauge .value {
+    dominant-baseline: text-after-edge; }
   .linear-gauge .units {
-    fill: #666; }
+    fill: #666;
+    dominant-baseline: hanging; }

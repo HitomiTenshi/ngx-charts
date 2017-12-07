@@ -40,13 +40,10 @@ var BubbleSeriesComponent = /** @class */ (function () {
                     _this.colors.getColor(seriesName);
                 var isActive = !_this.activeEntries.length ? true : _this.isActive({ name: seriesName });
                 var opacity = isActive ? 1 : 0.3;
-                var data = {
-                    series: seriesName,
-                    name: d.name,
-                    value: d.y,
-                    x: d.x,
-                    radius: d.r
-                };
+                var data = d;
+                data.series = seriesName;
+                data.value = d.y;
+                data.radius = d.r;
                 return {
                     data: data,
                     x: x,

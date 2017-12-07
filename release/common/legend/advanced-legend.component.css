@@ -11,8 +11,7 @@
   .advanced-pie-legend .legend-items-container {
     width: 100%; }
     .advanced-pie-legend .legend-items-container .legend-items {
-      white-space: nowrap;
-      overflow: auto; }
+      white-space: nowrap; }
       .advanced-pie-legend .legend-items-container .legend-items .legend-item {
         margin-right: 20px;
         display: inline-block;

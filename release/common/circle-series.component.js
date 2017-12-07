@@ -70,11 +70,8 @@ var CircleSeriesComponent = /** @class */ (function () {
                 else {
                     color = _this.colors.getColor(seriesName);
                 }
-                var data = {
-                    series: seriesName,
-                    value: value,
-                    name: label
-                };
+                var data = d;
+                data.series = seriesName;
                 return {
                     classNames: ["circle-data-" + i],
                     value: value,
