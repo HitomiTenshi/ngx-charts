@@ -8,7 +8,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component, Input, ChangeDetectionStrategy, ElementRef, Output, EventEmitter } from '@angular/core';
-import { formatLabel } from '..';
+import { formatLabel } from '../common/label.helper';
 var BarLabelComponent = /** @class */ (function () {
     function BarLabelComponent(element) {
         this.dimensionsChanged = new EventEmitter();
@@ -36,7 +36,7 @@ var BarLabelComponent = /** @class */ (function () {
         }
         if (this.orientation === 'horizontal') {
             this.x = this.barX + this.barWidth;
-            // if the value is negative then it's on the left of the x0. 
+            // if the value is negative then it's on the left of the x0.
             // we need to put the data label in front of the bar
             if (this.value < 0) {
                 this.x = this.x - this.horizontalPadding;
@@ -49,7 +49,7 @@ var BarLabelComponent = /** @class */ (function () {
             this.y = this.barY + this.barHeight / 2;
         }
         else {
-            // orientation must be "vertical"      
+            // orientation must be "vertical"
             this.x = this.barX + this.barWidth / 2;
             this.y = this.barY + this.barHeight;
             if (this.value < 0) {
@@ -98,7 +98,7 @@ var BarLabelComponent = /** @class */ (function () {
     BarLabelComponent = __decorate([
         Component({
             selector: 'g[ngx-charts-bar-label]',
-            template: "  \n    <svg:text   \n      class=\"textDataLabel\" \n      alignment-baseline=\"middle\"     \n      [attr.text-anchor]=\"textAnchor\"\n      [attr.transform]=\"transform\"\n      [attr.x]=\"x\" \n      [attr.y]=\"y\">\n      {{formatedValue}}     \n    </svg:text>          \n\n  ",
+            template: "\n    <svg:text\n      class=\"textDataLabel\"\n      alignment-baseline=\"middle\"\n      [attr.text-anchor]=\"textAnchor\"\n      [attr.transform]=\"transform\"\n      [attr.x]=\"x\"\n      [attr.y]=\"y\">\n      {{formatedValue}}\n    </svg:text>\n\n  ",
             styleUrls: ['./bar-label.component.css'],
             changeDetection: ChangeDetectionStrategy.OnPush
         }),
