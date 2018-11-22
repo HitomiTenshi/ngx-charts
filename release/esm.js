@@ -2960,11 +2960,8 @@ var CircleSeriesComponent = /** @class */ (function () {
         else {
             color = this.colors.getColor(seriesName);
         }
-        var data = {
-            series: seriesName,
-            value: value,
-            name: label
-        };
+        var data = d;
+        data.series = seriesName;
         return {
             classNames: ["circle-data-" + i],
             value: value,
@@ -3263,7 +3260,7 @@ var GridPanelSeriesComponent = /** @class */ (function () {
     };
     GridPanelSeriesComponent.prototype.getGridPanels = function () {
         var _this = this;
-        return this.data.map(function (d, i) {
+        return this.data.map(function (d) {
             var offset;
             var width;
             var height;
@@ -9491,13 +9488,10 @@ var BubbleSeriesComponent = /** @class */ (function () {
                     _this.colors.getColor(seriesName);
                 var isActive = !_this.activeEntries.length ? true : _this.isActive({ name: seriesName });
                 var opacity = isActive ? 1 : 0.3;
-                var data = {
-                    series: seriesName,
-                    name: d.name,
-                    value: d.y,
-                    x: d.x,
-                    radius: d.r
-                };
+                var data = d;
+                data.series = seriesName;
+                data.value = d.y;
+                data.radius = d.r;
                 return {
                     data: data,
                     x: x,
@@ -11505,11 +11499,8 @@ var PolarSeriesComponent = /** @class */ (function () {
             var r = _this.getRadius(d);
             var value = d.value;
             var color = _this.colors.getColor(linearScaleType ? Math.abs(value) : seriesName);
-            var cData = {
-                series: seriesName,
-                value: value,
-                name: d.name
-            };
+            var cData = d;
+            cData.series = seriesName;
             return {
                 data: cData,
                 cx: r * Math.sin(a),
